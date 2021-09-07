@@ -4,8 +4,6 @@ import React, { useState } from "react";
 
 function App() {
   const [input, setInput] = useState(null);
-  const [table, setTable] = useState([]);
-  const [fib, setFib] = useState([]);
   const [show, setShow] = useState([]);
 
   const handleInput = (e) => {
@@ -21,7 +19,6 @@ function App() {
           myArr.push(myArr[i - 2] + myArr[i - 1]);
         }
       }
-      setFib(myArr);
 
       let fibo = [];
       let tampung = [];
@@ -33,7 +30,7 @@ function App() {
           tampung.push(elementFib);
           fibo.push(tampung);
           tampung = [];
-        } else if (j === fib.length - 1) {
+        } else if (j === myArr.length - 1) {
           fibo.push(tampung);
         } else {
           tampung.push(elementFib);
@@ -41,7 +38,8 @@ function App() {
       }
       console.log(fibo, "Hasil fib");
       setShow(fibo);
-
+      fibo = [];
+      myArr = [];
       setInput("");
     } else {
       setShow([]);
