@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,9 +23,73 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.input {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  margin-top: 10px;
+}
 .App-link {
   color: #61dafb;
+}
+.btn-create-data {
+  color: black;
+}
+.thead {
+  font-size: 14px;
+  color: black;
+}
+
+.tbody {
+  font-size: 12px;
+  color: black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.th {
+  border-top: 1px solid black;
+  padding: 4px 4px;
+  font-weight: bold;
+}
+td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2px 4px;
+}
+.label-sm-bold {
+  font-size: 16px;
+  /* font-weight: "500";
+  font-weight: bold; */
+}
+.btn-create-data {
+  /* display: flex; */
+  background-color: #fecc00;
+  color: black;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  margin: 0 0 0 auto;
+  margin-right: 10px;
+  width: 50%;
+  height: 10%;
+  border-width: 1px;
+  border-style: solid;
+
+  margin-left: 10px;
+  /* cursor: pointer; */
+  /* align-self: flex-end; */
+}
+
+img {
+  width: 24px;
+}
+
+#bi-th {
+  height: 50px;
 }
 
 @keyframes App-logo-spin {
